@@ -1,0 +1,25 @@
+import java.util.*;
+class automorphic
+{
+public static void main(String args[])
+{
+int a,b,n,t;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the value of n");
+n=sc.nextInt();
+t=n*n;
+while(n!=0)
+{
+a=n%10;
+b=t%10;
+if(a!=b)
+break;
+n=n/10;
+t=t/10;
+}
+if(n==0)
+System.out.println("it is an automorphic number");
+else
+System.out.println("it is not an automorphic number");
+}
+}
